@@ -1,6 +1,6 @@
 const normalizeURL = (url) => {
-  const myUrl = new URL(url);
-  const hostAndPath = `${myUrl.host}${myUrl.pathname.replace(/\/$/, '')}`;
+  const urlObj = new URL(url);
+  const hostAndPath = `${urlObj.host}${urlObj.pathname.replace(/\/$/, '')}`;
   return hostAndPath;
 }
 
